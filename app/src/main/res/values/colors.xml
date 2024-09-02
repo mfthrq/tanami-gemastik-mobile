@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="text_black">#3A3A3A</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="underline_grey">#BDBDBD</color>
+    <color name="background">#F5F5F5</color>
+    <color name="start_gradient">#732B80</color>
+    <color name="end_gradient">#D1358B</color>
+    <color name="colorRadioButton">#FAE55D</color>
+    <color name="white_secondary">#F5F5F5</color>
+    <color name="red_warning">#EE3843</color>
+    <color name="grey">#CDCDCD</color>
+    <color name="purple">#732B80</color>
+    <color name="pink">#EE388E</color>
+    <color name="pink_light">#FEB6B5</color>
+    <color name="yellow">#FADC1F</color>
+    <color name="yellow_text">#F0D20E</color>
+    <color name="transparent">#00000000</color>
 </resources>

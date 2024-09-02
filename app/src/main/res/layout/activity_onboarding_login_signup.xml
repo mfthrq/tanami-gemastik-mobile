@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OnboardingLoginSignup"
+    >
+
+    <ImageView
+        android:id="@+id/ilustrasi_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ilustrasi_1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:elevation="2dp"/>
+
+    <!-- Kotak dengan border radius dan warna hijau gradient -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/rounded_green_gradient"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halo, GreenBestie!"
+                android:textColor="@color/white"
+                android:fontFamily="@font/dmsans_bold"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TANAMI sebagai sahabat menanam akan membantu kamu dalam mewujudkan mimpi berkebun dengan mudah dari rumahmu."
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
