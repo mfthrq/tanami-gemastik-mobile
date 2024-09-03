@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <!-- Mengatur sudut radius hanya untuk kanan atas dan kiri atas -->
+    <corners
+        android:topLeftRadius="50dp"
+        android:topRightRadius="50dp" />
+
+    <!-- Mengatur gradien warna hijau -->
+    <gradient
+        android:startColor="#FFFFFF"
+        android:endColor="#FFFFFF"
+        android:angle="120"/>
+</shape>

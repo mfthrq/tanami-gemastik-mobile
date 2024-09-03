@@ -10,11 +10,12 @@
     <color name="colorRadioButton">#FAE55D</color>
     <color name="white_secondary">#F5F5F5</color>
     <color name="red_warning">#EE3843</color>
-    <color name="grey">#CDCDCD</color>
+    <color name="grey">#B2374151</color>
     <color name="purple">#732B80</color>
     <color name="pink">#EE388E</color>
     <color name="pink_light">#FEB6B5</color>
     <color name="yellow">#FADC1F</color>
     <color name="yellow_text">#F0D20E</color>
     <color name="transparent">#00000000</color>
+    <color name="green">#40A858</color>
 </resources>

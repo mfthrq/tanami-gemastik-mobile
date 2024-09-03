@@ -53,6 +53,42 @@
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
                 />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_daftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daftar Sekarang"
+                android:textColor="@color/green"
+                android:textAllCaps="false"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_radius_white_1"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/dmsans_bold"
+                android:textSize="16sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masuk"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_radius_green_1"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/dmsans_bold"
+                android:textSize="16sp"
+                />
         </LinearLayout>
 
     </ScrollView>
