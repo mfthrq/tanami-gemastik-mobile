@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Tanamigemastik"
         tools:targetApi="31">
         <activity
+            android:name=".Homepage1"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="false" />
         <activity

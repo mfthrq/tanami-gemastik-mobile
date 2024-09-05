@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="209dp">
+            <ImageView
+                android:id="@+id/header_homepage1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/header_homepage1"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/avatar1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Halo, Minwan!"
+                        android:textColor="#40A858"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/dmsans_bold"/>
+                    <ImageView
+                        android:id="@+id/role_xp"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/role_xp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="16dp"
+            android:layout_marginTop="-20dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/rectangle_homepage">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TANAMI COIN"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/dmsans_bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Coin"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/dmsans_regular"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            >
+                            <ImageView
+                                android:id="@+id/coin"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/coin_homepage"
+                                android:scaleType="centerCrop"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="250"
+                                android:textColor="#41A759"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/dmsans_bold"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/logo_tanami"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/logo_tanami_onboarding"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C0C0C0"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Klik disini untuk info lebih lanjut"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/dmsans_regular"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="100dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cek tumbuh kembang tanamanmu!"
+                        android:textColor="#016838"
+                        android:textSize="17sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/dmsans_bold"/>
+
+                    <ImageView
+                        android:id="@+id/progress_tanaman_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="110dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/progress_tanaman_1" />
+
+                    <ImageView
+                        android:id="@+id/progress_tanaman_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="110dp"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/progress_tanaman_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jadwal Konsultasimu"
+                        android:textColor="#016838"
+                        android:textSize="17sp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/dmsans_bold"/>
+
+                    <ImageView
+                        android:id="@+id/card_jadwal_konsultasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/card_jadwal_konsultasi" />
+                </LinearLayout>
+            </ScrollView>
+
+            <!-- Navbar Start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0"
+                android:orientation="vertical"
+                >
+                <!-- Menu Navbar Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rectangle_homepage">
+                    <!-- Container Navbar Start -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp">
+
+                        <!-- Menu Home Start -->
+                        <LinearLayout
+                            android:id="@+id/home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/home_svg"
+                                app:tint="#40A858"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Beranda"
+                                android:textAlignment="center"
+                                android:textSize="10sp"
+                                android:textColor="#40A858"
+                                android:fontFamily="@font/dmsans_bold">
+                            </TextView>
+                        </LinearLayout>
+                        <!-- Menu Home End -->
+
+                        <!-- Menu Chat Start -->
+                        <LinearLayout
+                            android:id="@+id/chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/produk_svg" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Produk"
+                                android:textSize="10sp"
+                                android:textAlignment="center"
+                                android:textColor="#D4D3D3"
+                                android:fontFamily="@font/dmsans_bold">
+                            </TextView>
+                        </LinearLayout>
+
+                        <!-- Menu Riwayat Start -->
+                        <LinearLayout
+                            android:id="@+id/riwayat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/todo_svg" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="To-Do"
+                                android:textSize="10sp"
+                                android:textColor="#D4D3D3"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/dmsans_bold">
+                            </TextView>
+                        </LinearLayout>
+                        <!-- Menu Riwayat End -->
+
+                        <!-- Menu Profil Start -->
+                        <LinearLayout
+                            android:id="@+id/profil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/konsultasi_svg" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Konsultasi"
+                                android:textSize="10sp"
+                                android:textColor="#D4D3D3"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/dmsans_bold">
+                            </TextView>
+                        </LinearLayout>
+                        <!-- Menu Profil Start -->
+
+                    </LinearLayout>
+                    <!-- Container Navbar End -->
+                </LinearLayout>
+                <!-- Menu Navbar End -->
+            </LinearLayout>
+            <!-- Navbar End -->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

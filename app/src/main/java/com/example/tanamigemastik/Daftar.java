@@ -1,6 +1,7 @@
 package com.example.tanamigemastik;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.os.Bundle;
 import android.content.Intent;
@@ -20,6 +21,17 @@ public class Daftar extends AppCompatActivity {
             public void onClick(View v) {
                 // Intent untuk berpindah ke Login activity
                 Intent intent = new Intent(Daftar.this, Login.class);
+                startActivity(intent);
+            }
+        });
+
+        // Inisialisasi AppCompatButton untuk login
+        AppCompatButton btnDaftar = findViewById(R.id.btn_daftar);
+        btnDaftar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent untuk berpindah ke Homepage1 activity
+                Intent intent = new Intent(Daftar.this, Homepage1.class);
                 startActivity(intent);
             }
         });
