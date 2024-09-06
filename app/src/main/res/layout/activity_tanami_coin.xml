@@ -28,40 +28,13 @@
                 android:orientation="horizontal"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 >
                 <ImageView
-                    android:id="@+id/avatar"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/avatar1" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Halo, Minwan!"
-                        android:textColor="#40A858"
-                        android:textSize="20sp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/dmsans_bold"/>
-                    <ImageView
-                        android:id="@+id/role_xp"
-                        android:layout_width="150dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/role_xp" />
-                </LinearLayout>
-
-                <ImageView
-                    android:id="@+id/notif"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/notif" />
+                    android:id="@+id/tanami_coin"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/tanami_coin" />
 
             </LinearLayout>
         </FrameLayout>
@@ -79,85 +52,98 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:padding="16dp"
+                android:gravity="center_vertical"
                 android:background="@drawable/rectangle_homepage">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TANAMI COIN"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/dmsans_bold"/>
+                <ImageView
+                    android:id="@+id/piechart"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pie_chart" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center_vertical"
-                    >
-                    <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical">
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_weight="1"
+                        android:text="Detail Coin"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/dmsans_bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Basic Coin"
+                        android:textColor="#000000"
+                        android:layout_marginTop="5dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/dmsans_regular"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
                         >
+                        <ImageView
+                            android:id="@+id/coin"
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/coin_homepage_hijau"
+                            />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Total Coin"
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:fontFamily="@font/dmsans_regular"/>
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center"
-                            >
-                            <ImageView
-                                android:id="@+id/coin"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/coin_homepage"
-                                android:scaleType="centerCrop"
-                                />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="250"
-                                android:textColor="#41A759"
-                                android:textSize="20sp"
-                                android:fontFamily="@font/dmsans_bold"/>
-
-                        </LinearLayout>
+                            android:text="150"
+                            android:textColor="#41A759"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/dmsans_bold"/>
                     </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/logo_tanami"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:src="@drawable/logo_tanami_onboarding"
-                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bundling Coin"
+                        android:textColor="#000000"
+                        android:layout_marginTop="8dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/dmsans_regular"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kadaluwarsa: 20 September 2024"
+                        android:textColor="#2E98D6"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/dmsans_regular"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:id="@+id/coin_2"
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/coin_homepage_biru"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textColor="#3099D6"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/dmsans_bold"/>
+                    </LinearLayout>
                 </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#C0C0C0"
-                    android:layout_marginTop="10dp"/>
-
-                <TextView
-                    android:id="@+id/tanami_coin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Klik disini untuk info lebih lanjut"
-                    android:textColor="@color/grey"
-                    android:textSize="12sp"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/dmsans_regular"/>
 
             </LinearLayout>
 
@@ -186,43 +172,71 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cek tumbuh kembang tanamanmu!"
+                        android:text="Top Up TANAMI COIN"
                         android:textColor="#016838"
                         android:textSize="17sp"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/dmsans_bold"/>
 
-                    <ImageView
-                        android:id="@+id/progress_tanaman_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="110dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/progress_tanaman_1" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!-- ImageView pertama di sebelah kiri -->
+                        <ImageView
+                            android:id="@+id/topup_tanamicoin_15"
+                            android:layout_width="0dp"
+                            android:layout_height="110dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/topup_tanamicoin_15" />
 
-                    <ImageView
-                        android:id="@+id/progress_tanaman_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="110dp"
-                        android:layout_marginTop="8dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/progress_tanaman_2" />
+                        <!-- ImageView kedua di sebelah kanan -->
+                        <ImageView
+                            android:id="@+id/topup_tanamicoin_25"
+                            android:layout_width="0dp"
+                            android:layout_height="110dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/topup_tanamicoin_25" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!-- ImageView pertama di sebelah kiri -->
+                        <ImageView
+                            android:id="@+id/topup_tanamicoin_50"
+                            android:layout_width="0dp"
+                            android:layout_height="110dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/topup_tanamicoin_50" />
+
+                        <!-- ImageView kedua di sebelah kanan -->
+                        <ImageView
+                            android:id="@+id/topup_tanamicoin_100"
+                            android:layout_width="0dp"
+                            android:layout_height="110dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/topup_tanamicoin_100" />
+                    </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Jadwal Konsultasimu"
-                        android:textColor="#016838"
+                        android:text="Paket Bundling Untukmu"
+                        android:textColor="#2A95DD"
                         android:textSize="17sp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/dmsans_bold"/>
-
-                    <ImageView
-                        android:id="@+id/card_jadwal_konsultasi"
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="200dp"
-                        android:src="@drawable/card_jadwal_konsultasi" />
+                        android:layout_height="wrap_content"
+                        android:text="Kamu akan mendapatkan penawaran harga lebih murah daripada membeli dengan harga normal. Namun koin ini memiliki waktu kadaluwarsa"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/dmsans_regular"/>
+
                 </LinearLayout>
             </ScrollView>
 
