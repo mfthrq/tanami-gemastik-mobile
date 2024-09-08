@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".OnboardingKonsultasi">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/header_homepage1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/header_homepage1"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/dmsans_bold"
+            android:gravity="center"
+            android:text="Konsultasi"
+            android:textColor="#40A858"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="@drawable/rounded_green_gradient"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="29dp"
+                android:paddingRight="29dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginTop="30dp"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="50dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/logo_tanami_1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/dmsans_bold"
+                            android:gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:text="Sukseskan Panenmu dengan Konsultasi Panen"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/checklist_konsultasi"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dmsans_bold"
+                                    android:text="Konsultasi Mudah"
+                                    android:textColor="#000000"
+                                    android:textSize="15sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dmsans_regular"
+                                    android:text="Diskusi semuanya tentang menanam darimana saja, kapan saja."
+                                    android:textColor="#000000"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/checklist_konsultasi"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dmsans_bold"
+                                    android:text="Langsung dengan Ahlinya"
+                                    android:textColor="#000000"
+                                    android:textSize="15sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dmsans_regular"
+                                    android:text="Konsultasi tanaman mulai dari kendala dan masalah lainnya dengan pakarnya."
+                                    android:textColor="#000000"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/checklist_konsultasi"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dmsans_bold"
+                                    android:text="Chat atau Live Call"
+                                    android:textColor="#000000"
+                                    android:textSize="15sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dmsans_regular"
+                                    android:text="Ahli kami akan selalu siap melayani  Kamu."
+                                    android:textColor="#000000"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_mulai_konsultasi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mulai Konsultasi"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/gradient_green_todo"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/dmsans_bold"
+                            android:textSize="16sp"
+                            />
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

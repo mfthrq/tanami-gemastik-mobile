@@ -149,15 +149,29 @@
                     android:background="#C0C0C0"
                     android:layout_marginTop="10dp"/>
 
-                <TextView
-                    android:id="@+id/tanami_coin"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Klik disini untuk info lebih lanjut"
-                    android:textColor="@color/grey"
-                    android:textSize="12sp"
+                    android:gravity="center_vertical"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/dmsans_regular"/>
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tanami_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Klik disini untuk info lebih lanjut"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/dmsans_regular"/>
+
+                    <ImageView
+                        android:id="@+id/tombol_back_abu"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/tombol_back_abu" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -228,17 +242,110 @@
                             android:layout_height="wrap_content"
                             android:text="Lihat Detail"
                             android:textColor="#016838"
-                            android:textSize="17sp"
+                            android:textSize="15sp"
                             android:layout_marginTop="20dp"
                             android:layout_marginBottom="10dp"
                             android:fontFamily="@font/dmsans_regular"/>
                     </LinearLayout>
-
                     <ImageView
                         android:id="@+id/card_jadwal_konsultasi"
                         android:layout_width="wrap_content"
                         android:layout_height="200dp"
                         android:src="@drawable/card_jadwal_konsultasi" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rekomendasi Kebutuhan Berkebun"
+                            android:textColor="#016838"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/dmsans_bold"/>
+                        <ImageView
+                            android:id="@+id/tombol_back"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:rotation="180"
+                            android:src="@drawable/tombol_back" />
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <ImageView
+                                android:id="@+id/filter_tanaman_homepage"
+                                android:layout_width="110dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/filter_tanaman_homepage" />
+                            <ImageView
+                                android:id="@+id/filter_pupuk_homepage"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/filter_pupuk_homepage" />
+                            <ImageView
+                                android:id="@+id/filter_alatberkebun_homepage"
+                                android:layout_width="130dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/filter_alatberkebun_homepage" />
+                            <ImageView
+                                android:id="@+id/filter_paketbundling_homepage"
+                                android:layout_width="130dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/filter_paketbundling_homepage" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <ImageView
+                                android:id="@+id/filter_cabai_homepage"
+                                android:layout_width="180dp"
+                                android:layout_height="250dp"
+                                android:src="@drawable/bibit_cabai_homepage" />
+                            <ImageView
+                                android:id="@+id/filter_stroberi_homepage"
+                                android:layout_width="180dp"
+                                android:layout_height="250dp"
+                                android:src="@drawable/bibit_stroberi_homepage" />
+                            <ImageView
+                                android:id="@+id/filter_tomat_homepage"
+                                android:layout_width="180dp"
+                                android:layout_height="250dp"
+                                android:src="@drawable/bibit_tomat_homepage" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <ImageView
+                        android:id="@+id/footer_homepage"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/footer_homepage" />
+
                 </LinearLayout>
             </ScrollView>
 
