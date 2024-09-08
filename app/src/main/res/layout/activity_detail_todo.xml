@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="209dp">
+            <ImageView
+                android:id="@+id/header_detail_todo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/header_detail_todo"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/tombol_back_putih"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/tombol_back_putih" />
+
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-20dp"
+            app:cardElevation="10dp"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/rounded_white"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanaman Lili"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/dmsans_bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Tahap Persiapan Lahan"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/dmsans_regular"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tgl. Tanam: 1 Agu 2023"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/dmsans_regular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Est. Panen: 01 Okt 2023"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/dmsans_regular"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C0C0C0"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:id="@+id/timeline_detail_todo"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/timeline_detail_todo" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="100dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tata Cara"
+                        android:textColor="#000000"
+                        android:textSize="17sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/dmsans_bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Bersihkan lahan dari gulma dan sampah organik."
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/dmsans_regular"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Gali tanah hingga kedalaman sekitar 20-30 cm."
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/dmsans_regular"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Campurkan pupuk organik atau pupuk kandang ke dalam tanah dengan perbandingan yang direkomendasikan."
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/dmsans_regular"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="• Siram tanah hingga lembab dan biarkan selama beberapa hari untuk memastikan tanah stabil."
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/dmsans_regular"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alami Kesulitan?"
+                            android:textColor="#000000"
+                            android:textSize="17sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/dmsans_bold"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lihat Detail"
+                            android:textColor="#40A858"
+                            android:textSize="12sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/dmsans_regular"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Konsultasikan Sekarang!"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/dmsans_regular"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/kotak_konsultasi_chat"
+                            android:layout_weight="1"
+                            />
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/kotak_konsultasi_live_call"
+                            android:layout_weight="1"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/tombol_update_selesai"
+
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:src="@drawable/tombol_cek_tanaman_realtime"
+
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

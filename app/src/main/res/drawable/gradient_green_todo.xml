@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Gradient warna hijau dari gelap ke terang -->
+    <gradient
+        android:startColor="#40A858"
+        android:endColor="#7ED956"
+        android:angle="270"/>
+
+    <!-- Sudut melengkung (radius) -->
+    <corners
+        android:radius="16dp"/>       <!-- Atur radius sudut -->
+
+</shape>

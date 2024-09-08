@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Konsultasi">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/header_homepage1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/header_homepage1"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/dmsans_bold"
+            android:gravity="center"
+            android:text="Konsultasi"
+            android:textColor="#40A858"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="@drawable/rounded_green_gradient"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="29dp"
+                android:paddingRight="29dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginTop="30dp"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="150dp"
+                        >
+                        <ImageView
+                            android:id="@+id/slider_konsultasi_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="170dp"
+                            android:src="@drawable/slider_konsultasi_1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dmsans_bold"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Rekomendasi Video Untukmu"
+                            android:textColor="#016838"
+                            android:textSize="17sp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:id="@+id/video_konsultasi_1"
+                                    android:layout_width="240dp"
+                                    android:layout_height="200dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/video_konsultasi_1"/>
+                                <ImageView
+                                    android:id="@+id/video_konsultasi_2"
+                                    android:layout_width="240dp"
+                                    android:layout_height="200dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/video_konsultasi_2"/>
+                                <ImageView
+                                    android:id="@+id/video_konsultasi_3"
+                                    android:layout_width="240dp"
+                                    android:layout_height="200dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/video_konsultasi_3"/>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jadwal Konsultasimu"
+                                android:textColor="#016838"
+                                android:textSize="17sp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/dmsans_bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lihat Detail"
+                                android:textColor="#016838"
+                                android:textSize="17sp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/dmsans_regular"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/card_jadwal_konsultasi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:src="@drawable/card_jadwal_konsultasi" />
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Navbar Start -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            >
+            <!-- Menu Navbar Start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_homepage">
+                <!-- Container Navbar Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+
+                    <!-- Menu Home Start -->
+                    <LinearLayout
+                        android:id="@+id/home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_svg"
+
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Beranda"
+                            android:textAlignment="center"
+                            android:textSize="10sp"
+                            android:textColor="#D3D3D3"
+                            android:fontFamily="@font/dmsans_bold">
+                        </TextView>
+                    </LinearLayout>
+                    <!-- Menu Home End -->
+
+                    <!-- Menu Produk Start -->
+                    <LinearLayout
+                        android:id="@+id/produk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/produk_svg" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Produk"
+                            android:textSize="10sp"
+                            android:textAlignment="center"
+                            android:textColor="#D4D3D3"
+                            android:fontFamily="@font/dmsans_bold">
+                        </TextView>
+                    </LinearLayout>
+                    <!-- Menu Produk End -->
+
+                    <!-- Menu Todo Start -->
+                    <LinearLayout
+                        android:id="@+id/todo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/todo_svg"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="To-Do"
+                            android:textSize="10sp"
+                            android:textColor="#D3D3D3"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/dmsans_bold">
+                        </TextView>
+                    </LinearLayout>
+                    <!-- Menu Todo End -->
+
+                    <!-- Menu Konsultasi Start -->
+                    <LinearLayout
+                        android:id="@+id/konsultasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/konsultasi_svg"
+                            app:tint="#40A858" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Konsultasi"
+                            android:textSize="10sp"
+                            android:textColor="#40A858"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/dmsans_bold">
+                        </TextView>
+                    </LinearLayout>
+                    <!-- Menu Konsultasi End -->
+
+                </LinearLayout>
+                <!-- Container Navbar End -->
+            </LinearLayout>
+            <!-- Menu Navbar End -->
+        </LinearLayout>
+        <!-- Navbar End -->
+    </RelativeLayout>
+
+</RelativeLayout>

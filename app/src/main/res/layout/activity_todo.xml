@@ -22,46 +22,27 @@
                 android:src="@drawable/header_homepage1"
                 android:scaleType="centerCrop" />
 
+            <ImageView
+                android:id="@+id/tombol_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/tombol_back" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 >
                 <ImageView
-                    android:id="@+id/avatar"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/avatar1" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Halo, Minwan!"
-                        android:textColor="#40A858"
-                        android:textSize="20sp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/dmsans_bold"/>
-                    <ImageView
-                        android:id="@+id/role_xp"
-                        android:layout_width="150dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/role_xp" />
-                </LinearLayout>
-
-                <ImageView
-                    android:id="@+id/notif"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/notif" />
+                    android:id="@+id/logo_todo_tanam"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/logo_todo_tanam" />
 
             </LinearLayout>
         </FrameLayout>
@@ -69,95 +50,60 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="10dp"
+            app:cardCornerRadius="16dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:padding="16dp"
             android:layout_marginTop="-20dp"
-            app:cardElevation="10dp">
+            app:cardElevation="10dp"
+            android:layout_gravity="center_horizontal"
+
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:background="@drawable/rectangle_homepage">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TANAMI COIN"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/dmsans_bold"/>
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:background="@drawable/gradient_green_todo"
+                android:gravity="center"
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
                     >
-                    <LinearLayout
+
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_weight="1"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Total Coin"
-                            android:textColor="#000000"
-                            android:textSize="15sp"
-                            android:fontFamily="@font/dmsans_regular"/>
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center"
-                            >
-                            <ImageView
-                                android:id="@+id/coin"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/coin_homepage"
-                                android:scaleType="centerCrop"
-                                />
+                        android:text="Mulai Jadwal Menanam Kamu Sekarang!"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/dmsans_bold"/>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="250"
-                                android:textColor="#41A759"
-                                android:textSize="20sp"
-                                android:fontFamily="@font/dmsans_bold"/>
-
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <ImageView
-                        android:id="@+id/logo_tanami"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:src="@drawable/logo_tanami_onboarding"
-                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum dolor sit amet consectetur. Ac orci id tempus."
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/dmsans_regular"/>
                 </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#C0C0C0"
-                    android:layout_marginTop="10dp"/>
-
-                <TextView
-                    android:id="@+id/tanami_coin"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_tambah_todo"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Klik disini untuk info lebih lanjut"
-                    android:textColor="@color/grey"
+                    android:layout_height="40dp"
+                    android:text="Buat To Do"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:background="@drawable/button_radius_white_1"
+                    android:fontFamily="@font/dmsans_regular"
                     android:textSize="12sp"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/dmsans_regular"/>
+                    />
 
             </LinearLayout>
 
@@ -186,62 +132,87 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cek tumbuh kembang tanamanmu!"
-                        android:textColor="#016838"
+                        android:text="To Do Anda"
+                        android:textColor="#000000"
                         android:textSize="17sp"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/dmsans_bold"/>
 
-                    <ImageView
-                        android:id="@+id/progress_tanaman_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="110dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/progress_tanaman_1" />
-
-                    <ImageView
-                        android:id="@+id/progress_tanaman_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="110dp"
-                        android:layout_marginTop="8dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/progress_tanaman_2" />
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/tombol_filter"
+                            android:scaleType="centerCrop"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            />
 
-                        <TextView
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_selesai"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Jadwal Konsultasimu"
-                            android:textColor="#016838"
-                            android:textSize="17sp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/dmsans_bold"/>
-                        <TextView
+                            android:layout_height="33dp"
+                            android:text="Selesai"
+                            android:textColor="@color/grey"
+                            android:textAllCaps="false"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/button_radius_white_1"
+                            android:fontFamily="@font/dmsans_regular"
+                            android:textSize="10sp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_sedang"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Lihat Detail"
-                            android:textColor="#016838"
-                            android:textSize="17sp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginBottom="10dp"
-                            android:fontFamily="@font/dmsans_regular"/>
+                            android:layout_height="33dp"
+                            android:text="Sedang Berlangsung"
+                            android:textColor="@color/grey"
+                            android:textAllCaps="false"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/button_radius_white_1"
+                            android:fontFamily="@font/dmsans_regular"
+                            android:textSize="10sp"
+                            />
+
                     </LinearLayout>
 
                     <ImageView
-                        android:id="@+id/card_jadwal_konsultasi"
-                        android:layout_width="wrap_content"
-                        android:layout_height="200dp"
-                        android:src="@drawable/card_jadwal_konsultasi" />
+                        android:id="@+id/progress_todo_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/progress_todo_1" />
+                    <ImageView
+                        android:id="@+id/progress_todo_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/progress_todo_1" />
+                    <ImageView
+                        android:id="@+id/progress_todo_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/progress_todo_1" />
+
                 </LinearLayout>
             </ScrollView>
-
             <!-- Navbar Start -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -279,7 +250,6 @@
                                 android:layout_height="20dp"
                                 android:layout_gravity="center"
                                 android:src="@drawable/home_svg"
-                                app:tint="#40A858"
                                 />
                             <TextView
                                 android:layout_width="match_parent"
@@ -288,7 +258,7 @@
                                 android:text="Beranda"
                                 android:textAlignment="center"
                                 android:textSize="10sp"
-                                android:textColor="#40A858"
+                                android:textColor="#D4D3D3"
                                 android:fontFamily="@font/dmsans_bold">
                             </TextView>
                         </LinearLayout>
@@ -336,14 +306,16 @@
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
                                 android:layout_gravity="center"
-                                android:src="@drawable/todo_svg" />
+                                android:src="@drawable/todo_svg"
+                                app:tint="#40A858"
+                                />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:text="To-Do"
                                 android:textSize="10sp"
-                                android:textColor="#D4D3D3"
+                                android:textColor="#40A858"
                                 android:textAlignment="center"
                                 android:fontFamily="@font/dmsans_bold">
                             </TextView>

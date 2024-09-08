@@ -1,27 +1,27 @@
 package com.example.tanamigemastik;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
-public class Homepage1 extends AppCompatActivity {
+public class Todo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_homepage1);
+        setContentView(R.layout.activity_todo);
 
-        TextView tanamiCoinTextView = findViewById(R.id.tanami_coin);
-        tanamiCoinTextView.setOnClickListener(new View.OnClickListener() {
+        // Set OnClickListener pada tombol
+        AppCompatButton btnTambahTodo = findViewById(R.id.btn_tambah_todo);
+        btnTambahTodo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Intent untuk membuka halaman TanamiCoin
-                Intent intent = new Intent(Homepage1.this, TanamiCoin.class);
+                // Intent untuk membuka halaman TambahTodo
+                Intent intent = new Intent(Todo.this, TambahTodo.class);
                 startActivity(intent);
             }
         });
@@ -32,7 +32,7 @@ public class Homepage1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent untuk membuka halaman Todo
-                Intent intent = new Intent(Homepage1.this, Homepage1.class);
+                Intent intent = new Intent(Todo.this, Homepage1.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
             }
@@ -43,7 +43,7 @@ public class Homepage1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent untuk membuka halaman Todo
-                Intent intent = new Intent(Homepage1.this, Todo.class);
+                Intent intent = new Intent(Todo.this, Todo.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
             }
@@ -54,7 +54,7 @@ public class Homepage1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent untuk membuka halaman Todo
-                Intent intent = new Intent(Homepage1.this, Konsultasi.class);
+                Intent intent = new Intent(Todo.this, Konsultasi.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
             }
@@ -65,7 +65,7 @@ public class Homepage1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent untuk membuka halaman Todo
-                Intent intent = new Intent(Homepage1.this, Produk.class);
+                Intent intent = new Intent(Todo.this, Produk.class);
                 startActivity(intent);
                 overridePendingTransition(0, 0);
             }

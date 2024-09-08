@@ -22,6 +22,14 @@
                 android:src="@drawable/header_homepage1"
                 android:scaleType="centerCrop" />
 
+            <ImageView
+                android:id="@+id/tombol_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/tombol_back" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -45,34 +53,38 @@
             app:cardCornerRadius="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:padding="16dp"
             android:layout_marginTop="-20dp"
-            app:cardElevation="10dp">
+            app:cardElevation="10dp"
+            android:layout_gravity="center_horizontal"
+            >
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="16dp"
-                android:gravity="center_vertical"
-                android:background="@drawable/rectangle_homepage">
+                android:padding="15dp"
+                android:gravity="center"
+                android:layout_gravity="center">
                 <ImageView
                     android:id="@+id/piechart"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
+                    android:layout_marginRight="10dp"
                     android:src="@drawable/pie_chart" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:orientation="vertical">
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Detail Coin"
                         android:textColor="#000000"
-                        android:textSize="20sp"
+                        android:textSize="15sp"
                         android:fontFamily="@font/dmsans_bold"/>
 
                     <TextView
@@ -80,8 +92,7 @@
                         android:layout_height="wrap_content"
                         android:text="Basic Coin"
                         android:textColor="#000000"
-                        android:layout_marginTop="5dp"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:fontFamily="@font/dmsans_regular"/>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -91,8 +102,8 @@
                         >
                         <ImageView
                             android:id="@+id/coin"
-                            android:layout_width="30dp"
-                            android:layout_height="40dp"
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/coin_homepage_hijau"
                             />
@@ -102,7 +113,7 @@
                             android:layout_height="wrap_content"
                             android:text="150"
                             android:textColor="#41A759"
-                            android:textSize="20sp"
+                            android:textSize="15sp"
                             android:fontFamily="@font/dmsans_bold"/>
                     </LinearLayout>
 
@@ -111,8 +122,7 @@
                         android:layout_height="wrap_content"
                         android:text="Bundling Coin"
                         android:textColor="#000000"
-                        android:layout_marginTop="8dp"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:fontFamily="@font/dmsans_regular"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -129,8 +139,8 @@
                         >
                         <ImageView
                             android:id="@+id/coin_2"
-                            android:layout_width="30dp"
-                            android:layout_height="40dp"
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/coin_homepage_biru"
                             />
@@ -140,7 +150,7 @@
                             android:layout_height="wrap_content"
                             android:text="100"
                             android:textColor="#3099D6"
-                            android:textSize="20sp"
+                            android:textSize="15sp"
                             android:fontFamily="@font/dmsans_bold"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -237,150 +247,49 @@
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/dmsans_regular"/>
 
-                </LinearLayout>
-            </ScrollView>
-
-            <!-- Navbar Start -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_weight="0"
-                android:orientation="vertical"
-                >
-                <!-- Menu Navbar Start -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="@drawable/rectangle_homepage">
-                    <!-- Container Navbar Start -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginLeft="10dp">
-
-                        <!-- Menu Home Start -->
-                        <LinearLayout
-                            android:id="@+id/home"
-                            android:layout_width="wrap_content"
-                            android:layout_height="80dp"
+                        android:orientation="horizontal">
+                        <!-- ImageView pertama di sebelah kiri -->
+                        <ImageView
+                            android:id="@+id/topup_bundlingcoin_15"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
                             android:layout_weight="1"
-                            android:layout_marginTop="5dp"
-                            android:layout_gravity="center_vertical"
-                            android:gravity="center"
-                            android:orientation="vertical">
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_gravity="center"
-                                android:src="@drawable/home_svg"
-                                app:tint="#40A858"
-                                />
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:text="Beranda"
-                                android:textAlignment="center"
-                                android:textSize="10sp"
-                                android:textColor="#40A858"
-                                android:fontFamily="@font/dmsans_bold">
-                            </TextView>
-                        </LinearLayout>
-                        <!-- Menu Home End -->
+                            android:src="@drawable/topup_bundlingcoin_15" />
 
-                        <!-- Menu Chat Start -->
-                        <LinearLayout
-                            android:id="@+id/chat"
-                            android:layout_width="wrap_content"
-                            android:layout_height="80dp"
+                        <!-- ImageView kedua di sebelah kanan -->
+                        <ImageView
+                            android:id="@+id/topup_bundlingcoin_25"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
                             android:layout_weight="1"
-                            android:layout_marginTop="5dp"
-                            android:layout_gravity="center_vertical"
-                            android:gravity="center"
-                            android:orientation="vertical">
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_gravity="center"
-                                android:src="@drawable/produk_svg" />
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:text="Produk"
-                                android:textSize="10sp"
-                                android:textAlignment="center"
-                                android:textColor="#D4D3D3"
-                                android:fontFamily="@font/dmsans_bold">
-                            </TextView>
-                        </LinearLayout>
-
-                        <!-- Menu Riwayat Start -->
-                        <LinearLayout
-                            android:id="@+id/riwayat"
-                            android:layout_width="wrap_content"
-                            android:layout_height="80dp"
-                            android:layout_weight="1"
-                            android:layout_marginTop="5dp"
-                            android:layout_gravity="center_vertical"
-                            android:gravity="center"
-                            android:orientation="vertical">
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_gravity="center"
-                                android:src="@drawable/todo_svg" />
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:text="To-Do"
-                                android:textSize="10sp"
-                                android:textColor="#D4D3D3"
-                                android:textAlignment="center"
-                                android:fontFamily="@font/dmsans_bold">
-                            </TextView>
-                        </LinearLayout>
-                        <!-- Menu Riwayat End -->
-
-                        <!-- Menu Profil Start -->
-                        <LinearLayout
-                            android:id="@+id/profil"
-                            android:layout_width="wrap_content"
-                            android:layout_height="80dp"
-                            android:layout_weight="1"
-                            android:layout_marginTop="5dp"
-                            android:layout_gravity="center_vertical"
-                            android:gravity="center"
-                            android:orientation="vertical">
-                            <ImageView
-                                android:layout_width="20dp"
-                                android:layout_height="20dp"
-                                android:layout_gravity="center"
-                                android:src="@drawable/konsultasi_svg" />
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:text="Konsultasi"
-                                android:textSize="10sp"
-                                android:textColor="#D4D3D3"
-                                android:textAlignment="center"
-                                android:fontFamily="@font/dmsans_bold">
-                            </TextView>
-                        </LinearLayout>
-                        <!-- Menu Profil Start -->
-
+                            android:src="@drawable/topup_bundlingcoin_25" />
                     </LinearLayout>
-                    <!-- Container Navbar End -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!-- ImageView pertama di sebelah kiri -->
+                        <ImageView
+                            android:id="@+id/topup_bundlingcoin_50"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/topup_bundlingcoin_50" />
+
+                        <!-- ImageView kedua di sebelah kanan -->
+                        <ImageView
+                            android:id="@+id/topup_bundlingcoin_100"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/topup_bundlingcoin_100" />
+                    </LinearLayout>
+
                 </LinearLayout>
-                <!-- Menu Navbar End -->
-            </LinearLayout>
-            <!-- Navbar End -->
+            </ScrollView>
 
         </RelativeLayout>
 

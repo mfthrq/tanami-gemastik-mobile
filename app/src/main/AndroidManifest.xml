@@ -13,6 +13,21 @@
         android:theme="@style/Theme.Tanamigemastik"
         tools:targetApi="31">
         <activity
+            android:name=".Konsultasi"
+            android:exported="false" />
+        <activity
+            android:name=".DetailTodo"
+            android:exported="false" />
+        <activity
+            android:name=".TambahTodo"
+            android:exported="false" />
+        <activity
+            android:name=".Todo"
+            android:exported="false" />
+        <activity
+            android:name=".Produk"
+            android:exported="false" />
+        <activity
             android:name=".TanamiCoin"
             android:exported="false" />
         <activity
