@@ -10,15 +10,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 
-public class JadwalKonsultasi extends AppCompatActivity {
-
+public class DetailKonsultasi extends AppCompatActivity {
     private RadioButton radioFase1, radioFase2, radioFase3, radioFase4;
+    private AppCompatButton btnLanjutkan;
     private int checkedColor = Color.parseColor("#40A858");
-    private AppCompatButton btnDetailKonsultasi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jadwal_konsultasi);
+        setContentView(R.layout.activity_detail_konsultasi);
+        // Inisialisasi tombol
+        btnLanjutkan = findViewById(R.id.btn_lanjutkan);
+
+        // Set OnClickListener untuk tombol
+        btnLanjutkan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Membuka Pembayaran Activity
+                Intent intent = new Intent(DetailKonsultasi.this, Pembayaran.class);
+                startActivity(intent);
+            }
+        });
 
         // Inisialisasi RadioButton
         radioFase1 = findViewById(R.id.radio_fase1);
@@ -48,19 +59,6 @@ public class JadwalKonsultasi extends AppCompatActivity {
         radioFase2.setOnClickListener(radioClickListener);
         radioFase3.setOnClickListener(radioClickListener);
         radioFase4.setOnClickListener(radioClickListener);
-
-        // Inisialisasi tombol
-        btnDetailKonsultasi = findViewById(R.id.btn_detail_konsultasi);
-
-        // Set OnClickListener untuk tombol
-        btnDetailKonsultasi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Membuka DetailKonsultasi Activity
-                Intent intent = new Intent(JadwalKonsultasi.this, DetailKonsultasi.class);
-                startActivity(intent);
-            }
-        });
     }
 
     private void setRadioButtonColor(RadioButton radioButton) {

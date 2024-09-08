@@ -525,7 +525,7 @@
                     android:layout_marginLeft="29dp">
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/btn_mulai_konsultasi"
+                        android:id="@+id/btn_detail_konsultasi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Lanjutkan"

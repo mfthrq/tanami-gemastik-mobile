@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Tanamigemastik"
         tools:targetApi="31">
         <activity
+            android:name=".PembayaranBerhasil"
+            android:exported="false" />
+        <activity
+            android:name=".Pembayaran"
+            android:exported="false" />
+        <activity
+            android:name=".DetailKonsultasi"
+            android:exported="false" />
+        <activity
             android:name=".JadwalKonsultasi"
             android:exported="false" />
         <activity
