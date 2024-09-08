@@ -167,106 +167,103 @@
                             android:textColor="#000000"
                             android:textSize="17sp"
                             android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
                             android:fontFamily="@font/dmsans_bold"/>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical"
-                            android:layout_marginTop="16dp">
-
-                            <!-- Teks di sebelah kiri -->
-                            <TextView
-                                android:layout_width="0dp"
+                            <LinearLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="Fase 1\nPersiapan Lahan"
-                                android:textSize="15sp"
-                                android:fontFamily="@font/dmsans_regular"
-                                android:textColor="#000000"/>
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical">
 
-                            <!-- Radio Button di sebelah kanan -->
-                            <RadioButton
-                                android:id="@+id/radio_fase1"
-                                android:layout_width="wrap_content"
+                                <!-- Teks di sebelah kiri -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Fase 1\nPersiapan Lahan"
+                                    android:textSize="15sp"
+                                    android:fontFamily="@font/dmsans_regular"
+                                    android:textColor="#000000"/>
+
+                                <!-- Radio Button di sebelah kanan -->
+                                <RadioButton
+                                    android:id="@+id/radio_fase1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/green" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:buttonTint="@color/green" />
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical"
-                            android:layout_marginTop="5dp">
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="5dp">
 
-                            <!-- Teks di sebelah kiri -->
-                            <TextView
-                                android:layout_width="0dp"
+                                <!-- Teks di sebelah kiri -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Fase 2\nPembibitan"
+                                    android:textSize="15sp"
+                                    android:fontFamily="@font/dmsans_regular"
+                                    android:textColor="#000000"/>
+
+                                <!-- Radio Button di sebelah kanan -->
+                                <RadioButton
+                                    android:id="@+id/radio_fase2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/green" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="Fase 2\nPembibitan"
-                                android:textSize="15sp"
-                                android:fontFamily="@font/dmsans_regular"
-                                android:textColor="#000000"/>
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="5dp">
 
-                            <!-- Radio Button di sebelah kanan -->
-                            <RadioButton
-                                android:id="@+id/radio_fase1"
-                                android:layout_width="wrap_content"
+                                <!-- Teks di sebelah kiri -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Fase 3\nPemupukan"
+                                    android:textSize="15sp"
+                                    android:fontFamily="@font/dmsans_regular"
+                                    android:textColor="#000000"/>
+
+                                <!-- Radio Button di sebelah kanan -->
+                                <RadioButton
+                                    android:id="@+id/radio_fase3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/green" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:buttonTint="@color/green" />
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical"
-                            android:layout_marginTop="5dp">
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="5dp">
 
-                            <!-- Teks di sebelah kiri -->
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="Fase 3\nPemupukan"
-                                android:textSize="15sp"
-                                android:fontFamily="@font/dmsans_regular"
-                                android:textColor="#000000"/>
+                                <!-- Teks di sebelah kiri -->
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Fase 4\nPemanenan"
+                                    android:textSize="15sp"
+                                    android:fontFamily="@font/dmsans_regular"
+                                    android:textColor="#000000"/>
 
-                            <!-- Radio Button di sebelah kanan -->
-                            <RadioButton
-                                android:id="@+id/radio_fase1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:buttonTint="@color/green" />
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical"
-                            android:layout_marginTop="5dp">
-
-                            <!-- Teks di sebelah kiri -->
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="Fase 4\nPemanenan"
-                                android:textSize="15sp"
-                                android:fontFamily="@font/dmsans_regular"
-                                android:textColor="#000000"/>
-
-                            <!-- Radio Button di sebelah kanan -->
-                            <RadioButton
-                                android:id="@+id/radio_fase1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:buttonTint="@color/green" />
-                        </LinearLayout>
-
+                                <!-- Radio Button di sebelah kanan -->
+                                <RadioButton
+                                    android:id="@+id/radio_fase4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/green" />
+                            </LinearLayout>
 
                     </LinearLayout>
 

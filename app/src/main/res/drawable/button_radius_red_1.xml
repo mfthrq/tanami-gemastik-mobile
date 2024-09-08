@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Definisi Gradien -->
+    <gradient
+        android:startColor="#F35046"
+        android:endColor="#F35046"
+        android:angle="90"/>
+
+    <!-- Definisi Sudut Melengkung -->
+    <corners android:radius="12dp" />
+</shape>
