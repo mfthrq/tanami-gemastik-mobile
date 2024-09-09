@@ -46,7 +46,7 @@
                     android:src="@drawable/checklist_pembayaran_berhasil"/>
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_lanjutkan"
+                    android:id="@+id/btn_lihat_jadwal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Lihat Jadwal"

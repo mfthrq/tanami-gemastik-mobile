@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".RiwayatKonsultasiSelesai">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/header_homepage1"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/header_homepage1"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/dmsans_bold"
+            android:gravity="center"
+            android:text="Riwayat Konsultasi"
+            android:textColor="#40A858"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="@drawable/rounded_green_gradient"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white"
+                android:layout_marginTop="30dp"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- LinearLayout placed on top -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="16dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_berlangsung"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_status_verifikasi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Berlangsung"
+                                android:textColor="@color/grey"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/dmsans_bold"
+                                android:gravity="center" />
+
+                            <!-- Green line below "Berlangsung" -->
+                            <View
+                                android:layout_width="170dp"
+                                android:layout_height="5dp"
+                                android:layout_marginTop="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_selesai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_selesai"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Selesai"
+                                android:textColor="@color/green"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/dmsans_bold"
+                                android:gravity="center" />
+
+                            <!-- Transparent line for "Selesai" -->
+                            <View
+                                android:layout_width="170dp"
+                                android:layout_height="5dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/green" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Grey line below the entire LinearLayout -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#DFDFDF"
+                        android:layout_gravity="bottom" />
+
+                </FrameLayout>
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:paddingLeft="29dp"
+                    android:paddingRight="29dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="100dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="1dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@drawable/rectangle_homepage"
+                                android:padding="16dp"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/foto_orang_spesialis"
+                                        android:scaleType="centerCrop"
+                                        android:layout_gravity="center"
+                                        />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Nurrizkyta Aulia Hanifah"
+                                            android:textSize="15sp"
+                                            android:fontFamily="@font/dmsans_bold"
+                                            android:textColor="#000000"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Spesialis Tanaman Hias"
+                                            android:textSize="13sp"
+                                            android:fontFamily="@font/dmsans_regular"
+                                            android:textColor="@color/grey"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="5dp"
+                                    >
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_bold"
+                                        android:text="Tanaman Lili"
+                                        android:textColor="#000000"
+                                        android:textSize="15sp" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text=" • Konsultasi Chat"
+                                        android:textColor="#000000"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dmsans_regular"
+                                    android:text="Tahap 1 : Persiapan Lahan"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center_vertical"
+                                    >
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/icon_jam_svg"
+                                        app:tint="#7ED856"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_bold"
+                                        android:text="15.00 - 15.20 • "
+                                        android:textColor="#000000"
+                                        android:textSize="12sp" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text="Senin, 20 Agustus 2024"
+                                        android:textColor="#000000"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:padding="15dp"
+                                    android:background="@drawable/background_note_biruabu_round"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/icon_note"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/dmsans_bold"
+                                            android:text="Note"
+                                            android:textColor="@color/green"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text="• Lokasi: Pilih area dengan sinar matahari cukup, drainase baik, dan ketinggian 700-1.200 mdpl."
+                                        android:textColor="#000000"
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="12sp" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text="• Tanah: Gunakan tanah gembur dengan pH 6,0-7,0. Tambahkan pupuk organik 20-30 ton/ha."
+                                        android:textColor="#000000"
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="12sp" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text="• Bedengan: Buat bedengan lebar 1-1,2 m, tinggi 20-30 cm, jarak tanam 20-30 cm."
+                                        android:textColor="#000000"
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="12sp" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text="• Irigasi: Pasang sistem irigasi tetes atau sprinkler. Pastikan kelembaban tanah konsisten."
+                                        android:textColor="#000000"
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="12sp" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text="• Bibit: Pilih bibit berkualitas, simpan di tempat sejuk dan kering sebelum ditanam."
+                                        android:textColor="#000000"
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingTop="16dp"
+                                    android:paddingBottom="16dp"
+                                    >
+
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:textSize="11sp"
+                                        android:textAllCaps="false"
+                                        android:fontFamily="@font/dmsans_bold"
+                                        android:textColor="#7ED956"
+                                        android:text="Chat Ahli"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/button_radius_white_1"
+                                        />
+
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:textSize="11sp"
+                                        android:textAllCaps="false"
+                                        android:textColor="#FFFFFF"
+                                        android:fontFamily="@font/dmsans_bold"
+                                        android:text="Pesan Lagi"
+                                        android:background="@drawable/background_green_round"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="1dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@drawable/rectangle_homepage"
+                                android:padding="16dp"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/foto_orang_spesialis"
+                                        android:scaleType="centerCrop"
+                                        android:layout_gravity="center"
+                                        />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Nurrizkyta Aulia Hanifah"
+                                            android:textSize="15sp"
+                                            android:fontFamily="@font/dmsans_bold"
+                                            android:textColor="#000000"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Spesialis Tanaman Hias"
+                                            android:textSize="13sp"
+                                            android:fontFamily="@font/dmsans_regular"
+                                            android:textColor="@color/grey"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="5dp"
+                                    >
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_bold"
+                                        android:text="Tanaman Lili"
+                                        android:textColor="#000000"
+                                        android:textSize="15sp" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text=" • Konsultasi Chat"
+                                        android:textColor="#000000"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/dmsans_regular"
+                                    android:text="Tahap 1 : Persiapan Lahan"
+                                    android:textColor="#000000"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center_vertical"
+                                    >
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/icon_jam_svg"
+                                        app:tint="#7ED856"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_bold"
+                                        android:text="15.00 - 15.20 • "
+                                        android:textColor="#000000"
+                                        android:textSize="12sp" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text="Senin, 20 Agustus 2024"
+                                        android:textColor="#000000"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:padding="15dp"
+                                    android:background="@drawable/background_note_biruabu_round"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+                                        <ImageView
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/icon_note"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/dmsans_bold"
+                                            android:text="Note"
+                                            android:textColor="@color/green"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text="• Lokasi: Pilih area dengan sinar matahari cukup, drainase baik, dan ketinggian 700-1.200 mdpl."
+                                        android:textColor="#000000"
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="12sp" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text="• Tanah: Gunakan tanah gembur dengan pH 6,0-7,0. Tambahkan pupuk organik 20-30 ton/ha."
+                                        android:textColor="#000000"
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="12sp" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text="• Bedengan: Buat bedengan lebar 1-1,2 m, tinggi 20-30 cm, jarak tanam 20-30 cm."
+                                        android:textColor="#000000"
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="12sp" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text="• Irigasi: Pasang sistem irigasi tetes atau sprinkler. Pastikan kelembaban tanah konsisten."
+                                        android:textColor="#000000"
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="12sp" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        android:text="• Bibit: Pilih bibit berkualitas, simpan di tempat sejuk dan kering sebelum ditanam."
+                                        android:textColor="#000000"
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingTop="16dp"
+                                    android:paddingBottom="16dp"
+                                    >
+
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:textSize="11sp"
+                                        android:textAllCaps="false"
+                                        android:fontFamily="@font/dmsans_bold"
+                                        android:textColor="#7ED956"
+                                        android:text="Chat Ahli"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/button_radius_white_1"
+                                        />
+
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:textSize="11sp"
+                                        android:textAllCaps="false"
+                                        android:textColor="#FFFFFF"
+                                        android:fontFamily="@font/dmsans_bold"
+                                        android:text="Pesan Lagi"
+                                        android:background="@drawable/background_green_round"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

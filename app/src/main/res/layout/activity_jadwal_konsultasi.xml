@@ -15,7 +15,7 @@
         <ImageView
             android:id="@+id/header_homepage1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="230dp"
             android:src="@drawable/header_homepage1"
             android:scaleType="centerCrop" />
 

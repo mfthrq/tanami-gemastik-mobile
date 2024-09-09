@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:startColor="@color/transparent"
+                android:endColor="@color/transparent" />
+            <corners
+                android:radius="50dp" />
+
+            <stroke
+                android:width="2dp"
+                android:color="#F9FAFB" />
+
+            <!-- Tambahkan atribut width dan height -->
+            <size
+                android:width="50dp"
+                android:height="25dp" />
+        </shape>
+    </item>
+
+</selector>
