@@ -327,7 +327,7 @@
                     android:layout_marginLeft="29dp">
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/btn_lanjutkan"
+                        android:id="@+id/btn_tambah_keranjang"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Tambah ke Keranjang"

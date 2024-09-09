@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".PesananDibuat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="29dp"
+                android:paddingRight="29dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:src="@drawable/ilustrasi_pesanan_dibuat"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_bold"
+                    android:text="Pesananmu Sudah Dibuat"
+                    android:layout_gravity="center"
+                    android:textColor="@color/green"
+                    android:gravity="center"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="Pesananmu sudah masuk kedalam sistem kami, ditunggu yaa!"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- Navbar Start -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <!-- Menu Navbar Start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:background="@drawable/rectangle_homepage">
+
+                <!-- Container Navbar Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="29dp"
+                    android:layout_marginLeft="29dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_kembali"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kembali"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/gradient_green_todo"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/dmsans_bold"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <!-- Container Navbar End -->
+            </LinearLayout>
+            <!-- Menu Navbar End -->
+        </LinearLayout>
+        <!-- Navbar End -->
+    </RelativeLayout>
+
+
+</RelativeLayout>
