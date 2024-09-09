@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Tanamigemastik"
         tools:targetApi="31">
         <activity
+            android:name=".DetailProduk"
+            android:exported="false" />
+        <activity
             android:name=".RiwayatKonsultasiSelesai"
             android:exported="false" />
         <activity

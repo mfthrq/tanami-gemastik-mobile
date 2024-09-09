@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Produk extends AppCompatActivity {
@@ -13,6 +14,19 @@ public class Produk extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_produk);
+
+        // Referensi ke ImageView
+        ImageView imageView = findViewById(R.id.produk_benih_tomat);
+
+        // Set OnClickListener untuk ImageView
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent untuk pindah ke DetailProduk
+                Intent intent = new Intent(Produk.this, DetailProduk.class);
+                startActivity(intent);
+            }
+        });
 
         // ==== NAVBAR ====
         LinearLayout homeLayout = findViewById(R.id.home);
