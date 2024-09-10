@@ -29,6 +29,19 @@ public class RiwayatKonsultasi extends AppCompatActivity {
             }
         });
 
+        // Temukan Button dari layout
+        AppCompatButton mulaiKonsultasiButton = findViewById(R.id.mulai_konsultasi);
+
+        // Set OnClickListener untuk Button
+        mulaiKonsultasiButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Pindah ke ChatKonsultasi.java saat Button diklik
+                Intent intent = new Intent(RiwayatKonsultasi.this, KonsultasiChat.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

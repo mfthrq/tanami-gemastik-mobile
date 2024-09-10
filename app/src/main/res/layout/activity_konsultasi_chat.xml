@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".RiwayatKonsultasi">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/header_homepage1"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/header_homepage1"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingHorizontal="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/tombol_back"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/foto_orang_spesialis"
+                    android:scaleType="centerCrop"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nurrizkyta Aulia Hanifah"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/dmsans_bold"
+                        android:textColor="@color/green"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Spesialis Tanaman Hias"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:textColor="@color/green"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_gradient_background"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dmsans_bold"
+                            android:gravity="center"
+                            android:text="Tanaman Lili"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dmsans_regular"
+                            android:gravity="center"
+                            android:text="Tahap 1 : Persiapan Lahan"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dmsans_regular"
+                            android:gravity="center"
+                            android:text="Waktu Tersisa"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/dmsans_bold"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="19"
+                                android:textColor="@color/grey"
+                                android:background="@drawable/button_radius_white_1"
+                                android:textSize="13sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/dmsans_bold"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text=":"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/dmsans_bold"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="48"
+                                android:textColor="@color/grey"
+                                android:background="@drawable/button_radius_white_1"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="100dp"
+                        >
+
+                        <!-- Sender -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="end"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:background="@drawable/background_green_round"
+                                >
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    >
+                                    <TextView
+                                        android:id="@+id/pesan_pengirim"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="13sp"
+                                        android:text="Halo, Ibu Konsultan! Saya ingin berkonsultasi tentang persiapan lahan untuk menanam lili. Saya sudah punya lahan yang akan saya gunakan."
+                                        android:textColor="#FFFFFF"
+                                        android:fontFamily="@font/dmsans_regular"
+
+                                        />
+                                    <TextView
+                                        android:id="@+id/jam"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="11sp"
+                                        android:layout_gravity="bottom"
+                                        android:text="15.00"
+                                        android:layout_marginLeft="15dp"
+                                        android:textColor="#FFFFFF"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- Receiver -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/foto_orang_spesialis"
+                                android:scaleType="centerCrop"
+                                android:layout_marginRight="5dp"
+                                />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                android:background="@drawable/kotak_putih_chat"
+                                >
+                                <TextView
+                                    android:id="@+id/nama_konselor"
+                                    android:layout_width="250dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13sp"
+                                    android:text="Nurrizkyta Aulia • Konselor"
+                                    android:textColor="@color/green"
+                                    android:fontFamily="@font/dmsans_bold"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal"
+                                    >
+                                    <TextView
+                                        android:id="@+id/pesan_penerima"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="13sp"
+                                        android:text="Halo! Baik, Anda bisa mulai dengan mengirimkan foto lahan tersebut, agar saya bisa melihat kondisinya dan memberikan saran yang tepat. Apa ada yang bisa saya bantu lebih lanjut lagi?"
+                                        android:textColor="#000000"
+                                        android:fontFamily="@font/dmsans_regular"
+
+                                        />
+                                    <TextView
+                                        android:id="@+id/jam"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="11sp"
+                                        android:layout_gravity="bottom"
+                                        android:text="15.00"
+                                        android:layout_marginLeft="15dp"
+                                        android:textColor="@color/grey"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Sender -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="end"
+                                android:padding="8dp"
+                                android:background="@drawable/background_green_round"
+                                >
+
+                                <ImageView
+                                    android:layout_width="200dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/foto_dichat"
+                                    android:scaleType="centerCrop"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="5dp"
+                                    >
+                                    <TextView
+                                        android:id="@+id/jam"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="11sp"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:text="Ini foto lahannya, Bu"
+                                        android:textColor="#FFFFFF"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        />
+                                    <TextView
+                                        android:id="@+id/jam"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="11sp"
+                                        android:layout_gravity="bottom"
+                                        android:text="15.00"
+                                        android:textColor="#FFFFFF"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- Receiver -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/foto_orang_spesialis"
+                                android:scaleType="centerCrop"
+                                android:layout_marginRight="5dp"
+                                />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                android:background="@drawable/kotak_putih_chat"
+                                >
+                                <TextView
+                                    android:id="@+id/nama_konselor"
+                                    android:layout_width="250dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13sp"
+                                    android:text="Nurrizkyta Aulia • Konselor"
+                                    android:textColor="@color/green"
+                                    android:fontFamily="@font/dmsans_bold"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal"
+                                    >
+                                    <TextView
+                                        android:id="@+id/pesan_penerima"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="13sp"
+                                        android:text="Halo! Baik, Anda bisa mulai dengan mengirimkan foto lahan tersebut, agar saya bisa melihat kondisinya dan memberikan saran yang tepat. Apa ada yang bisa saya bantu lebih lanjut lagi?"
+                                        android:textColor="#000000"
+                                        android:fontFamily="@font/dmsans_regular"
+
+                                        />
+                                    <TextView
+                                        android:id="@+id/jam"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="11sp"
+                                        android:layout_gravity="bottom"
+                                        android:text="15.00"
+                                        android:layout_marginLeft="15dp"
+                                        android:textColor="@color/grey"
+                                        android:fontFamily="@font/dmsans_regular"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+            <!-- Navbar Start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0"
+                android:orientation="vertical"
+                >
+                <!-- Menu Navbar Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp">
+                    <!-- Container Navbar Start -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp">
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <!-- EditText -->
+                            <EditText
+                                android:id="@+id/no_telp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_2"
+                                android:hint="Ketik Pesan"
+                                android:padding="15dp"
+                                android:paddingStart="50dp"
+                                android:textColor="@color/text_black"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/dmsans_regular"/>
+
+                            <!-- Container untuk dua ikon di sebelah kanan -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|center_vertical"
+                                android:layout_marginRight="20dp"
+                                android:orientation="horizontal">
+
+                                <!-- Logo upload link -->
+                                <ImageView
+                                    android:id="@+id/logo_upload_link"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/logo_upload_lin" />
+
+                                <!-- Logo upload camera -->
+                                <ImageView
+                                    android:id="@+id/logo_upload_camera"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/logo_upload_camera"
+                                    android:layout_marginStart="10dp" />
+
+                            </LinearLayout>
+
+
+
+                            <!-- ImageView untuk logo_emot di sebelah kiri -->
+                            <ImageView
+                                android:id="@+id/logo_emot"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/logo_emot"
+                                android:layout_gravity="start|center_vertical"
+                                android:layout_marginStart="20dp" />
+                        </FrameLayout>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/button_submit_chat"/>
+
+                    </LinearLayout>
+                    <!-- Container Navbar End -->
+                </LinearLayout>
+                <!-- Menu Navbar End -->
+            </LinearLayout>
+            <!-- Navbar End -->
+    </RelativeLayout>
+</RelativeLayout>
