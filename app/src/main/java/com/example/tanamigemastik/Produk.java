@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class Produk extends AppCompatActivity {
 
@@ -14,6 +15,28 @@ public class Produk extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_produk);
+
+        TextView lihatDetailKategori = findViewById(R.id.lihat_detail_kategori);
+
+        lihatDetailKategori.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent to navigate to KategoriProduk activity
+                Intent intent = new Intent(Produk.this, KategoriProduk.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView kategoriTanaman = findViewById(R.id.kategori_tanaman);
+
+        kategoriTanaman.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent to navigate to KategoriProduk activity
+                Intent intent = new Intent(Produk.this, KategoriProduk.class);
+                startActivity(intent);
+            }
+        });
 
         // Referensi ke ImageView
         ImageView imageView = findViewById(R.id.produk_benih_tomat);

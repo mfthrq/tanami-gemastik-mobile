@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class Konsultasi extends AppCompatActivity {
 
@@ -14,6 +15,19 @@ public class Konsultasi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_konsultasi);
+
+        // In your current activity (e.g., MainActivity.java)
+        TextView lihatSemuaKonsultasi = findViewById(R.id.lihat_semua_konsultasi);
+
+        lihatSemuaKonsultasi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent to navigate to RiwayatKonsultasi activity
+                Intent intent = new Intent(Konsultasi.this, RiwayatKonsultasi.class);
+                startActivity(intent);
+            }
+        });
+
 
         // ==== NAVBAR ====
         LinearLayout homeLayout = findViewById(R.id.home);

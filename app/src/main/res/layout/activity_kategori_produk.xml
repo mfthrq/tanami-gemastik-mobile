@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".KategoriProduk">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <!-- Menu Navbar Start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_homepage">
+
+                <!-- Container Navbar Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/tombol_back_hitam"
+                        android:layout_gravity="start"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dmsans_bold"
+                        android:text="Kategori"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/logo_search_hitam"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+                <!-- Container Navbar End -->
+            </LinearLayout>
+            <!-- Menu Navbar End -->
+
+        </LinearLayout>
+        <!-- Header End -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header_layout"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    >
+
+                    <!-- LinearLayout placed on top -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="16dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_berlangsung"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_status_verifikasi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tanaman"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/dmsans_bold"
+                                android:gravity="center" />
+
+                            <!-- Green line below "Berlangsung" -->
+                            <View
+                                android:layout_width="170dp"
+                                android:layout_height="5dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/green" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_selesai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_selesai"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Alat"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/dmsans_regular"
+                                android:gravity="center" />
+
+                            <!-- Transparent line for "Selesai" -->
+                            <View
+                                android:layout_width="170dp"
+                                android:layout_height="5dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@android:color/transparent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_selesai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv_selesai"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ecocycle"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/dmsans_regular"
+                                android:gravity="center" />
+
+                            <!-- Transparent line for "Selesai" -->
+                            <View
+                                android:layout_width="170dp"
+                                android:layout_height="5dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@android:color/transparent" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Grey line below the entire LinearLayout -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#DFDFDF"
+                        android:layout_gravity="bottom" /> <!-- Adjust the margin as needed to push it below the green line -->
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="29dp"
+                    android:paddingVertical="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/button_radius_green_2"
+                        android:paddingVertical="30dp"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dmsans_bold"
+                            android:text="PROMO HARI BUMI"
+                            android:textColor="#FFFFFF"
+                            android:textSize="30sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/dmsans_regular"
+                            android:text="Up To 50% off"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/tanaaman_sayur"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="360dp"
+                        android:layout_height="130dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:src="@drawable/kotak_kategori_tanaman_sayur" />
+                    <ImageView
+                        android:id="@+id/tanaaman_hias"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="360dp"
+                        android:layout_height="130dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:src="@drawable/kotak_kategori_tanaman_hias" />
+                    <ImageView
+                        android:id="@+id/tanaaman_buah"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="360dp"
+                        android:layout_height="130dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:src="@drawable/kotak_kategori_tanaman_buah" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

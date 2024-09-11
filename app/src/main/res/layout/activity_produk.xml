@@ -127,6 +127,7 @@
                             android:layout_weight="1"
                             android:fontFamily="@font/dmsans_bold"/>
                         <TextView
+                            android:id="@+id/lihat_detail_kategori"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Lihat Detail"

@@ -125,11 +125,12 @@
                                 android:layout_weight="1"
                                 android:fontFamily="@font/dmsans_bold"/>
                             <TextView
+                                android:id="@+id/lihat_semua_konsultasi"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Lihat Detail"
+                                android:text="Lihat Semua"
                                 android:textColor="#016838"
-                                android:textSize="17sp"
+                                android:textSize="13sp"
                                 android:layout_marginTop="20dp"
                                 android:layout_marginBottom="10dp"
                                 android:fontFamily="@font/dmsans_regular"/>

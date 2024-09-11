@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".Login">
+    tools:context=".DetailTodo">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -179,11 +179,12 @@
                             android:fontFamily="@font/dmsans_bold"
                             android:layout_weight="1"/>
                         <TextView
+                            android:id="@+id/lihat_detail_alami_kesulitan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Lihat Detail"
                             android:textColor="#40A858"
-                            android:textSize="12sp"
+                            android:textSize="13sp"
                             android:layout_marginTop="20dp"
                             android:layout_marginBottom="5dp"
                             android:fontFamily="@font/dmsans_regular"/>
@@ -203,12 +204,14 @@
                         android:orientation="horizontal">
 
                         <ImageView
+                            android:id="@+id/konsultasi_chat"
                             android:layout_width="180dp"
                             android:layout_height="100dp"
                             android:src="@drawable/kotak_konsultasi_chat"
                             android:layout_weight="1"
                             />
                         <ImageView
+                            android:id="@+id/konsultasi_live_call"
                             android:layout_width="180dp"
                             android:layout_height="100dp"
                             android:src="@drawable/kotak_konsultasi_live_call"

@@ -6,7 +6,9 @@ import androidx.appcompat.widget.AppCompatButton;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class Todo extends AppCompatActivity {
 
@@ -25,6 +27,17 @@ public class Todo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView progressTodo1 = findViewById(R.id.progress_todo_1);
+        progressTodo1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent to navigate to DetailTodo activity
+                Intent intent = new Intent(Todo.this, DetailTodo.class);
+                startActivity(intent);
+            }
+        });
+
 
         // ==== NAVBAR ====
         LinearLayout homeLayout = findViewById(R.id.home);
