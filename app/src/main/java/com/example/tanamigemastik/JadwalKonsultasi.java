@@ -8,6 +8,7 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 
 public class JadwalKonsultasi extends AppCompatActivity {
@@ -19,6 +20,18 @@ public class JadwalKonsultasi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jadwal_konsultasi);
+
+        // In your current activity (e.g., MainActivity.java)
+        ImageView ppKonselor = findViewById(R.id.pp_konselor);
+
+        ppKonselor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent to navigate to ProfileKonselor activity
+                Intent intent = new Intent(JadwalKonsultasi.this, ProfileKonselor.class);
+                startActivity(intent);
+            }
+        });
 
         // Inisialisasi RadioButton
         radioFase1 = findViewById(R.id.radio_fase1);

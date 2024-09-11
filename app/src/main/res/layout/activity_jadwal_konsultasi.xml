@@ -340,6 +340,7 @@
                                 android:gravity="center">
 
                                 <ImageView
+                                    android:id="@+id/pp_konselor"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:src="@drawable/foto_orang_spesialis"
