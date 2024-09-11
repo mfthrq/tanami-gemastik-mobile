@@ -28,6 +28,7 @@
             >
 
             <ImageView
+                android:id="@+id/tombol_back"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/tombol_back"/>

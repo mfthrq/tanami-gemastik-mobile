@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class RiwayatKonsultasiSelesai extends AppCompatActivity {
@@ -13,6 +14,16 @@ public class RiwayatKonsultasiSelesai extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_riwayat_konsultasi_selesai);
+
+        // Initialize the back button
+        ImageView tombolBack = findViewById(R.id.tombol_back);
+        tombolBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate back to the previous screen
+                onBackPressed();
+            }
+        });
 
         // Find the LinearLayout by its ID
         LinearLayout llBerlangsung = findViewById(R.id.ll_berlangsung);

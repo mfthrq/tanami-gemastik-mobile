@@ -28,6 +28,7 @@
             >
 
             <ImageView
+                android:id="@+id/tombol_back"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/tombol_back"/>
@@ -206,6 +207,7 @@
                                     android:gravity="center">
 
                                     <ImageView
+                                        android:id="@+id/pp_konselor_detail"
                                         android:layout_width="50dp"
                                         android:layout_height="50dp"
                                         android:src="@drawable/foto_orang_spesialis"

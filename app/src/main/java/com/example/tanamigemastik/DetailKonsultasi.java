@@ -8,6 +8,7 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 
 public class DetailKonsultasi extends AppCompatActivity {
@@ -18,6 +19,28 @@ public class DetailKonsultasi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_konsultasi);
+
+        // Initialize the back button
+        ImageView tombolBack = findViewById(R.id.tombol_back);
+        tombolBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate back to the previous screen
+                onBackPressed();
+            }
+        });
+
+        // In your current activity (e.g., MainActivity.java)
+        ImageView ppKonselor = findViewById(R.id.pp_konselor_detail);
+        ppKonselor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent to navigate to ProfileKonselor activity
+                Intent intent = new Intent(DetailKonsultasi.this, ProfileKonselor.class);
+                startActivity(intent);
+            }
+        });
+
         // Inisialisasi tombol
         btnLanjutkan = findViewById(R.id.btn_lanjutkan);
 

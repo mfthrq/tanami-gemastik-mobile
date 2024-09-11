@@ -15,6 +15,16 @@ public class DetailTodo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_todo);
 
+        // Initialize the back button
+        ImageView tombolBack = findViewById(R.id.tombol_back);
+        tombolBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate back to the previous screen
+                onBackPressed();
+            }
+        });
+
         // In your current activity (e.g., MainActivity.java)
         ImageView konsultasiChat = findViewById(R.id.konsultasi_chat);
         ImageView konsultasiLiveCall = findViewById(R.id.konsultasi_live_call);

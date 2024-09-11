@@ -16,6 +16,16 @@ public class Produk extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_produk);
 
+        // Initialize the back button
+        ImageView tombolBack = findViewById(R.id.tombol_back);
+        tombolBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate back to the previous screen
+                onBackPressed();
+            }
+        });
+
         TextView lihatDetailKategori = findViewById(R.id.lihat_detail_kategori);
 
         lihatDetailKategori.setOnClickListener(new View.OnClickListener() {

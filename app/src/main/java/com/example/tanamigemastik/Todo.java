@@ -17,6 +17,16 @@ public class Todo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_todo);
 
+        // Initialize the back button
+        ImageView tombolBack = findViewById(R.id.tombol_back);
+        tombolBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate back to the previous screen
+                onBackPressed();
+            }
+        });
+
         // Set OnClickListener pada tombol
         AppCompatButton btnTambahTodo = findViewById(R.id.btn_tambah_todo);
         btnTambahTodo.setOnClickListener(new View.OnClickListener() {

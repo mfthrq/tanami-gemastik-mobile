@@ -63,6 +63,16 @@ public class JadwalKonsultasi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jadwal_konsultasi);
 
+        // Initialize the back button
+        ImageView tombolBack = findViewById(R.id.tombol_back);
+        tombolBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate back to the previous screen
+                onBackPressed();
+            }
+        });
+
         // Initialize time buttons
         Button btn10_00_10_35 = findViewById(R.id.btn_10_00_10_35);
         Button btn11_00_11_35 = findViewById(R.id.btn_11_00_11_35);

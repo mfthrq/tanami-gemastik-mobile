@@ -14,6 +14,16 @@ public class PaketKonsultasi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_paket_konsultasi);
 
+        // Initialize the back button
+        ImageView tombolBack = findViewById(R.id.tombol_back);
+        tombolBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate back to the previous screen
+                onBackPressed();
+            }
+        });
+
         // Inisialisasi ImageView untuk paket konsultasi chat
         ImageView paketKonsultasiChat = findViewById(R.id.paket_konsultasi_chat);
 

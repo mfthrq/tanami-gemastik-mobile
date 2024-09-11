@@ -15,6 +15,15 @@ public class Konsultasi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_konsultasi);
+        // Initialize the back button
+        ImageView tombolBack = findViewById(R.id.tombol_back);
+        tombolBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate back to the previous screen
+                onBackPressed();
+            }
+        });
 
         // In your current activity (e.g., MainActivity.java)
         TextView lihatSemuaKonsultasi = findViewById(R.id.lihat_semua_konsultasi);

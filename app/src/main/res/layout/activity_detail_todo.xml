@@ -23,7 +23,7 @@
                 android:scaleType="centerCrop" />
 
             <ImageView
-                android:id="@+id/tombol_back_putih"
+                android:id="@+id/tombol_back"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="20dp"

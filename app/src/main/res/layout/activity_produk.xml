@@ -30,7 +30,7 @@
                 android:paddingRight="20dp"
                 >
                 <ImageView
-                    android:id="@+id/tombol_back_putih_2"
+                    android:id="@+id/tombol_back"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginTop="50dp"

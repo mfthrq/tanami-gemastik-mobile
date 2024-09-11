@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 
 public class JenisTanamanKonsultasi extends AppCompatActivity {
@@ -19,6 +20,16 @@ public class JenisTanamanKonsultasi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jenis_tanaman_konsultasi);
+
+        // Initialize the back button
+        ImageView tombolBack = findViewById(R.id.tombol_back);
+        tombolBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate back to the previous screen
+                onBackPressed();
+            }
+        });
 
         // Inisialisasi RadioButton
         radioFase1 = findViewById(R.id.radio_fase1);
