@@ -218,7 +218,7 @@
                             android:textSize="15sp" />
                     </LinearLayout>
                     <ImageView
-                        android:id="@+id/tanaaman_sayur"
+                        android:id="@+id/tanaman_sayur"
                         android:layout_marginTop="10dp"
                         android:layout_width="360dp"
                         android:layout_height="130dp"
@@ -226,7 +226,7 @@
                         android:layout_gravity="center"
                         android:src="@drawable/kotak_kategori_tanaman_sayur" />
                     <ImageView
-                        android:id="@+id/tanaaman_hias"
+                        android:id="@+id/tanaman_hias"
                         android:layout_marginTop="10dp"
                         android:layout_width="360dp"
                         android:layout_height="130dp"
@@ -234,7 +234,7 @@
                         android:layout_gravity="center"
                         android:src="@drawable/kotak_kategori_tanaman_hias" />
                     <ImageView
-                        android:id="@+id/tanaaman_buah"
+                        android:id="@+id/tanaman_buah"
                         android:layout_marginTop="10dp"
                         android:layout_width="360dp"
                         android:layout_height="130dp"

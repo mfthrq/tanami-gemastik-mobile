@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".DetailKategori">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <!-- Menu Navbar Start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:background="@drawable/rectangle_homepage">
+
+                <!-- Container Navbar Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/tombol_back"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/tombol_back_hitam"
+                        android:layout_gravity="start"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/logo_search_hitam"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+                <!-- Container Navbar End -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_bold"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Tanaman Buah"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mudah"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingHorizontal="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:background="@drawable/background_green_round_2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Panen Cepat"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="12sp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingHorizontal="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/dmsans_regular"
+                        android:background="@drawable/background_green_round_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:background="#F9F9F9"
+                    android:padding="5dp"
+                    android:gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_filter_2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Filters"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/dmsans_regular" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="50dp"
+                        android:src="@drawable/icon_sort"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Harga : Termurah"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/dmsans_regular" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- Menu Navbar End -->
+
+        </LinearLayout>
+        <!-- Header End -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header_layout"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="29dp"
+                    android:paddingVertical="20dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/tanaaman_sayur"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="360dp"
+                        android:layout_height="130dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:src="@drawable/card_tanaman_jeruk_detail_kategori" />
+                    <ImageView
+                        android:id="@+id/tanaaman_hias"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="360dp"
+                        android:layout_height="130dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:src="@drawable/card_tanaman_stroberi_detail_kategori" />
+                    <ImageView
+                        android:id="@+id/tanaaman_buah"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="360dp"
+                        android:layout_height="130dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:src="@drawable/card_tanaman_apel_detail_kategori" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
