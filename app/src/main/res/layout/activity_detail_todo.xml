@@ -247,4 +247,290 @@
 
     </LinearLayout>
 
+    <!-- Tambahkan overlay layout di sini -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background dimming overlay -->
+        <View
+            android:id="@+id/background_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/overlay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:translationY="500dp"
+            android:background="@drawable/rounded_white"
+            android:paddingHorizontal="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/dmsans_bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="Agustus"
+                    android:textColor="#40A858"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/tablayout_jadwal_hari" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:gravity="center"
+                    android:text="*Waktu booking tidak dapat melebihi 7 hari"
+                    android:textColor="#FF0000"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:id="@+id/container_jadwal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_08_00_08_35"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:text="08.00 - 08.35"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/button_radius_red_1"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/dmsans_regular"
+                            />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_09_00_09_35"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:text="09.00 - 09.35"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/button_radius_red_1"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/dmsans_regular"
+                            />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_10_00_10_35"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:text="10.00 - 10.35"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/background_transparent_round"
+                            android:textColor="@color/green"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/dmsans_regular"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_11_00_11_35"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:text="11.00 - 11.35"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/background_transparent_round"
+                            android:textColor="@color/green"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/dmsans_regular"
+                            />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_12_00_12_35"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:text="12.00 - 12.35"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/background_transparent_round"
+                            android:textColor="@color/green"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/dmsans_regular"
+                            />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_13_00_13_35"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:text="13.00 - 13.35"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/background_transparent_round"
+                            android:textColor="@color/green"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/dmsans_regular"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_14_00_14_35"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:text="14.00 - 14.35"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/background_transparent_round"
+                            android:textColor="@color/green"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/dmsans_regular"
+                            />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_15_00_15_35"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:text="15.00 - 15.35"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/background_transparent_round"
+                            android:textColor="@color/green"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/dmsans_regular"
+                            />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_16_00_16_35"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:text="16.00 - 16.35"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/background_transparent_round"
+                            android:textColor="@color/green"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/dmsans_regular"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_17_00_17_35"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:text="17.00 - 17.35"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/background_transparent_round"
+                            android:textColor="@color/green"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/dmsans_regular"
+                            />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_18_00_18_35"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:text="18.00 - 18.35"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/background_transparent_round"
+                            android:textColor="@color/green"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/dmsans_regular"
+                            />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_19_00_19_35"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:text="19.00 - 19.35"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/button_radius_red_1"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/dmsans_regular"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/filter_warna_jadwal"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_buat_jadwal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buat Jadwal"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/gradient_green_todo"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/dmsans_bold"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
 </RelativeLayout>
