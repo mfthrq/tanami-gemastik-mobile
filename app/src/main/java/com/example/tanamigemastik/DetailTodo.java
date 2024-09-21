@@ -70,7 +70,7 @@ public class DetailTodo extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to CekHasilTanaman activity
-                Intent intent = new Intent(DetailTodo.this, CekHasilTanaman.class);
+                Intent intent = new Intent(DetailTodo.this, CameraScan.class);
                 startActivity(intent);
             }
         });

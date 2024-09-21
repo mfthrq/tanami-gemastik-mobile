@@ -40,6 +40,7 @@
                 </LinearLayout>
 
         <ScrollView
+            android:id="@+id/scroll_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/header_layout"
@@ -186,8 +187,102 @@
                 </HorizontalScrollView>
 
             </LinearLayout>
-
         </ScrollView>
+    </RelativeLayout>
+
+    <!-- Tambahkan overlay layout di sini -->
+    <RelativeLayout
+        android:id="@+id/overlay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_background_overlay"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="130dp">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/overlay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dmsans_bold"
+            android:text="Ingin Lihat Hasil Scan Tanamanmu?"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:gravity="start" />
+
+        <!-- Isi Teks -->
+        <TextView
+            android:id="@+id/overlay_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overlay_title"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:text="Hai! Kami sudah memindai tanamanmu menggunakan teknologi AI canggih, dan hasilnya sudah siap. Untuk bisa melihat kondisi tanamanmu secara real-time, kamu perlu menukarkan 3 TANAMI Coin.\n\nDengan menukarkan koin ini, kamu bisa mendapatkan insight mendalam tentang kesehatan tanamanmu, apakah mereka sedang sehat, butuh perawatan khusus, atau ada tanda-tanda masalah yang perlu diatasi segera. Semuanya ada di hasil scan ini!\n\nJangan khawatir, ini investasi kecil untuk memastikan tanamanmu selalu dalam kondisi terbaik. Yuk, tukar koin sekarang dan lihat apa yang tanamanmu katakan!"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:justificationMode="inter_word"
+            android:gravity="start" />
+
+        <LinearLayout
+            android:id="@+id/button_tukar_3_coin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overlay_message"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button_radius_white_1"
+            >
+
+            <ImageView
+                android:id="@+id/logo_coin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_coin_button"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_below="@id/button_tukar_3_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_bold"
+                    android:text="Tukar 3 TANAMI Coin"
+                    android:textColor="#4CAF50"
+                    android:textSize="13sp"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_below="@id/button_tukar_3_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dmsans_regular"
+                    android:text="Dan lihat hasil scan tanamanmu!"
+                    android:textColor="#4CAF50"
+                    android:textSize="11sp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_batalkan"
+            android:layout_below="@id/button_tukar_3_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dmsans_regular"
+            android:text="Batalkan lihat hasil"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
 
     </RelativeLayout>
 
