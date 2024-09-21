@@ -35,7 +35,7 @@ public class PaketKonsultasi extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent untuk berpindah ke JenisTanamanKonsultasi
-                Intent intent = new Intent(PaketKonsultasi.this, JenisTanamanKonsultasi.class);
+                Intent intent = new Intent(PaketKonsultasi.this, JenisTanamanKonsultasiGratis.class);
                 startActivity(intent);
             }
         });
