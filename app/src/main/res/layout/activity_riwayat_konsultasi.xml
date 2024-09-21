@@ -525,6 +525,7 @@
                                         />
 
                                     <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/mulai_konsultasi_live_call"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"

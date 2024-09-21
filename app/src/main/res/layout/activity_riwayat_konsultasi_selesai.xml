@@ -355,6 +355,7 @@
                                     >
 
                                     <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/btn_chat_ahli"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginRight="10dp"

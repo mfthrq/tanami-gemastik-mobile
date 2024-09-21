@@ -53,6 +53,16 @@ public class RiwayatKonsultasi extends AppCompatActivity {
             }
         });
 
+        AppCompatButton mulaiKonsultasilivecall = findViewById(R.id.mulai_konsultasi_live_call);
+
+        // Set an OnClickListener to navigate to KonsultasiLiveCall
+        mulaiKonsultasilivecall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RiwayatKonsultasi.this, KonsultasiLiveCall.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
