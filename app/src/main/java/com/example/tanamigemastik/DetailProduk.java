@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class DetailProduk extends AppCompatActivity {
 
@@ -31,6 +32,17 @@ public class DetailProduk extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DetailProduk.this, Keranjang.class);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout llLihatUlasan = findViewById(R.id.ll_lihat_ulasan);
+
+        llLihatUlasan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to Ulasan.java (UlasanActivity)
+                Intent intent = new Intent(DetailProduk.this, Ulasan.class);
                 startActivity(intent);
             }
         });

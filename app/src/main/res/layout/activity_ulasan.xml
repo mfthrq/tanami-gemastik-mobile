@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Ulasan">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:id="@+id/ll_atas"
+        android:orientation="vertical"
+        >
+
+            <ImageView
+                android:id="@+id/tombol_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/tombol_back_hitam"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Ulasan"
+                android:textSize="30sp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/dmsans_bold"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_atas"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="100dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/rating_block"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8 Reviews"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/dmsans_bold"/>
+                        <!-- Spacer to push the checkbox to the right -->
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="With photo"
+                            android:fontFamily="@font/dmsans_regular"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+                    <!-- Receiver -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/avatar_review"
+                            android:scaleType="centerCrop"
+                            android:layout_marginRight="5dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:background="@drawable/kotak_putih_chat"
+                            >
+                            <TextView
+                                android:id="@+id/nama_konselor"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:text="Helene Moore"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/dmsans_bold"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/rating_di_review_chat"/>
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="1dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="11sp"
+                                    android:text="June 5, 2019"
+                                    android:textColor="@color/grey"
+                                    android:fontFamily="@font/dmsans_regular"
+                                    />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:id="@+id/pesan_penerima"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13sp"
+                                    android:text="Benih Tomat Kualitas Terbaik cocok untuk kebun mungil dirumah mu. Benih Tomat Kualitas Terbaik cocok untuk kebun mungil dirumah mu. Benih Tomat Kualitas Terbaik cocok untuk kebun mungil dirumah mu. Benih Tomat Kualitas Terbaik cocok untuk kebun mungil dirumah mu."
+                                    android:textColor="#000000"
+                                    android:fontFamily="@font/dmsans_regular"
+
+                                    />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/jam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11sp"
+                                android:text="Helpful"
+                                android:textColor="@color/grey"
+                                android:layout_gravity="end"
+                                android:fontFamily="@font/dmsans_regular"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Receiver -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/avatar_review"
+                            android:scaleType="centerCrop"
+                            android:layout_marginRight="5dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:background="@drawable/kotak_putih_chat"
+                            >
+                            <TextView
+                                android:id="@+id/nama_konselor"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:text="Helene Moore"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/dmsans_bold"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/rating_di_review_chat"/>
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="1dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="11sp"
+                                    android:text="June 5, 2019"
+                                    android:textColor="@color/grey"
+                                    android:fontFamily="@font/dmsans_regular"
+                                    />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                    android:id="@+id/pesan_penerima"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13sp"
+                                    android:text="Benih Tomat Kualitas Terbaik cocok untuk kebun mungil dirumah mu. Benih Tomat Kualitas Terbaik cocok untuk kebun mungil dirumah mu. Benih Tomat Kualitas Terbaik cocok untuk kebun mungil dirumah mu. Benih Tomat Kualitas Terbaik cocok untuk kebun mungil dirumah mu."
+                                    android:textColor="#000000"
+                                    android:fontFamily="@font/dmsans_regular"
+
+                                    />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/jam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11sp"
+                                android:text="Helpful"
+                                android:textColor="@color/grey"
+                                android:layout_gravity="end"
+                                android:fontFamily="@font/dmsans_regular"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <!-- Navbar Start -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            >
+            <!-- Menu Navbar Start -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp">
+                <!-- Container Navbar Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="29dp"
+                    android:layout_marginLeft="29dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_tulis_review"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tulis Review"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/gradient_green_todo"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/dmsans_bold"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <!-- Container Navbar End -->
+            </LinearLayout>
+            <!-- Menu Navbar End -->
+        </LinearLayout>
+        <!-- Navbar End -->
+    </RelativeLayout>
+
+    <!-- Tambahkan overlay layout di sini -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background dimming overlay -->
+        <View
+            android:id="@+id/background_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/overlay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rounded_white"
+            android:visibility="gone"
+            android:translationY="500dp"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:id="@+id/ll_line_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingVertical="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/line_overlay"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/ll_line_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/dmsans_bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="What is you rate?"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitStart"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rating_stars_overlay"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/dmsans_bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Please share your opinion\n about the product"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/no_telp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/edittext_1"
+                    android:padding="15dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:fontFamily="@font/dmsans_regular"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:scaleType="fitStart"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add_image_review"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_kirim_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kirim Review"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/gradient_green_todo"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/dmsans_bold"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</RelativeLayout>
